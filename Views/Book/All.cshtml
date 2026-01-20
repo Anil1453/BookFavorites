@@ -1,0 +1,23 @@
+﻿@model IEnumerable<BookViewModel>
+<h1> All Book </h1>
+<hr/>
+
+<table class=" table table-striped"> 
+    <tr>
+        <td>Title </td>
+        <td>Author</td>
+        <td>Description</td>
+        <td>Year</td>
+        <td>Category</td>
+    </tr>
+    @foreach (var item in @Model)
+    {
+        <tr>
+            <td>@item.Title</td>
+            <td>@item.Author</td>
+            <td>@item.Description</td>
+            <td>@item.Year</td>
+            <td>@item.CategoryName</td>
+        </tr>
+    }
+</table>
